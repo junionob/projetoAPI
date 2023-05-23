@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dog's API</title>
+</head>
+<body>
+    <header>
+        <div class="cabeçalho_texto">
+            Encontre as fotos mais fofinhas da sua raça favorita
+        </div>
+    </header>
+    
+    <div id="campos" class="container_infos">
+        <label class="caompo_etiqueta" for="racas">Raças</label>
+        <select id="racas">
+            <option value="bulldog-french">Bulldog Francês</option>
+            <option value="boxer">Boxer</option>
+            <option value="terrier-yorkshire">Yorkshire Terrier</option>
+            <option value="labrador">Labrador</option>
+            <option value="pug">Pug</option>
+        </select>
+        <button id="button" onclick="recebeFoto()">Gerar</button>
+    </div>
+    <div id="campos" class="container_imagens">
+        <img id="imagem"/>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
