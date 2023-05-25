@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Dog's API</title>
+    <title>Dog's Fofos</title>
 </head>
 <body>
     <header>
@@ -13,21 +13,32 @@
             Encontre as fotos mais fofinhas da sua raça favorita
         </div>
     </header>
-    
+
+
+    <!-- Input de dados -->
     <div id="campos" class="container_infos">
-        <label class="caompo_etiqueta" for="racas">Raças</label>
+        <label for="racas">Raças</label>
         <select id="racas">
-            <option value="bulldog-french">Bulldog Francês</option>
+            <option value=" " selected> </option>
             <option value="boxer">Boxer</option>
-            <option value="terrier-yorkshire">Yorkshire Terrier</option>
+            <option value="bulldog/french">Bulldog Francês</option>
+            <option value="terrier/yorkshire">Yorkshire Terrier</option>
             <option value="labrador">Labrador</option>
             <option value="pug">Pug</option>
         </select>
         <button id="button" onclick="recebeFoto()">Gerar</button>
     </div>
-    <div id="campos" class="container_imagens">
-        <img id="imagem"/>
+
+    <div id="imagens">
+        <img height="300px" max-width="300px" id="imagem1"/> 
+        <img height="300px" max-width="300px" id="imagem2"/> 
+        <img height="300px" max-width="300px" id="imagem3"/> 
+        <img height="300px" max-width="300px" id="imagem4"/> 
+        <img height="300px" max-width="300px" id="imagem5"/> 
+
     </div>
+        
+
 
     <script src="script.js"></script>
 </body>

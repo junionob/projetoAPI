@@ -6,15 +6,10 @@
     --azul-letras: #cbdad5;
 }
 
-html {
+ html {
     box-sizing: border-box;
     height: 100%;
-}
-
-header {
-    margin: 0;
-    padding: 0;
-}
+} 
 
 body {
     margin: 0;
