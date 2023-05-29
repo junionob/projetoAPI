@@ -3,7 +3,6 @@ const racas = document.getElementById("racas");
 
 function recebeFoto(){
     var racaSelecionada = racas.value; 
-    var mensagemUrl; 
 
     urlAPI = `https://dog.ceo/api/breed/${racaSelecionada}/images/random/6`;
 
@@ -11,9 +10,9 @@ function recebeFoto(){
     .then(function(resposta){
         return resposta.json();
     })
-    .then(function(data){
+    .then(function(imagem){
         for(let i = 1; i <= 6; i++){
-                mostraImagem(data.message[i - 1], i)
+                mostraImagem(imagem.message[i - 1], i)
         }
     })
     .catch(function(error){
