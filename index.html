@@ -6,90 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>🐾 Love dogs</title>
-    
 </head>
 <body>
     <header>
-        <div class="cabeçalho_texto">
-            🐾 Minha Raça Favorita 🐾
-        </div>
+        <h1 class="cabecalho_texto">🐾 Minha Raça Favorita 🐾</h1>
     </header>
-
-
-    <!-- Input de dados -->
-    <div id="campos" class="container_infos">
-        <label for="racas">Raças</label>
-        <select id="racas">
-            <option value=" " selected></option>
-            <option value="boxer">Boxer</option>
-            <option value="bulldog/french">Bulldog Francês</option>
-            <option value="terrier/yorkshire">Yorkshire Terrier</option>
-            <option value="labrador">Labrador</option>
-            <option value="pug">Pug</option>
-        </select>
-        <button id="button" onclick="recebeFoto()">Gerar</button>
-    </div>
-    <div class="content">
-        <div class="slides">
-            <input type="radio" nome="slide" id="slide1" checked>
-            <input type="radio" nome="slide" id="slide2">
-            <input type="radio" nome="slide" id="slide3">
-            <input type="radio" nome="slide" id="slide4">
-            <input type="radio" nome="slide" id="slide5">
-            <input type="radio" nome="slide" id="slide6">
-
-            <div class="slide s1">
-                <img src="./img/image10-1024x474.png" id="imagem0"/>
-            </div>
-            <div class="slide">
-                <img id="imagem1"/>
-            </div>
-            <div class="slide">
-                <img id="imagem2"/>
-            </div>
-            <div class="slide">
-                <img id="imagem3"/>
-            </div>
-            <div class="slide">
-                <img id="imagem4"/>
-            </div>
-            <div class="slide">
-                <img id="imagem5"/>
-            </div>
-            <div class="slide">
-                <img id="imagem6"/>
-            </div>
-
-
+    <main>
+        <!-- Input de dados -->
+        <div id="campos" class="campos">
+            <button id="button" onclick="recebeFoto()" class="botao_gerar">Gerar</button>
+            <label for="racas" class="label"></label>
+            <select id="racas" class="selecionar">
+                <option selected></option>
+                <option value="boxer">Boxer</option>
+                <option value="bulldog/french">Bulldog Francês</option>
+                <option value="terrier/yorkshire">Yorkshire Terrier</option>
+                <option value="labrador">Labrador</option>
+                <option value="pug">Pug</option>
+            </select>
+            <button id="button" onclick="recebeFoto()" class="botao_gerar">Gerar</button>
         </div>
-
-        <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
-            <label class="bar" for="slide6"></label>
+        <div class="content">
+            <div class="fotos-container">
+               
+                <img id="imagem1" src="./img/image10-1024x474.png"/>
+                <img id="imagem2" src="./img/AdobeStock_245288727__1_.jpeg"/>
+                <img id="imagem3" src="./img/caes-afe-500x350.jpg" />
+            </div>
+            <div class="botoes-container">
+                <button class="adicionar" onclick="adicionarFoto()">Adicionar</button>
+                <button class="adicionar" onclick="adicionarFoto()">Adicionar</button>
+                <button class="adicionar" onclick="adicionarFoto()">Adicionar</button>
+                <!-- <button class="remover" onclick="removerFoto()">Remover</button> -->
+            </div>
             
-
         </div>
-
-    </div>
-
+    </main>
     <footer>
         created by 2T Nóbrega
     </footer>
-
-    <!-- <div id="imagens">
-        <img height="300px" max-width="300px" id="imagem1"/> 
-        <img height="300px" max-width="300px" id="imagem2"/> 
-        <img height="300px" max-width="300px" id="imagem3"/> 
-        <img height="300px" max-width="300px" id="imagem4"/> 
-        <img height="300px" max-width="300px" id="imagem5"/> 
-        <img height="300px" max-width="300px" id="imagem6"/> 
-    </div>
-         -->
-
 
     <script src="script.js"></script>
 </body>
