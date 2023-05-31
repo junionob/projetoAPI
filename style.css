@@ -67,8 +67,8 @@ body {
     display: inline; 
     justify-content: center; 
     border: 1px solid var(--texto); 
-    width: 340px;
-    height: 110px;    
+    width: 1000px;
+    /* height: 110px;     */
     border-radius: 20px;
     text-align: center;  
     overflow: hidden; 
@@ -145,4 +145,32 @@ footer {
     margin-inline: 10px;
     cursor: pointer;
 
+}
+
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	/* 0; */
+	margin: 0 auto;
+	border: 1px solid #ccc;
+    width: 1000px;
+    padding: 100px 100px 100px 100px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.img_lista {
+    width: 200px;
+    height: 200px;
 }
