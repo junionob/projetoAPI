@@ -2,9 +2,9 @@ const racas = document.getElementById("racas");
 const listItems = JSON.parse(localStorage.getItem('data')) || [];
 
 function recebeFoto(){
-    var racaSelecionada = racas.value; 
 
-    urlAPI = `https://dog.ceo/api/breed/${racaSelecionada}/images/random/3`;
+    let racaSelecionada = racas.value; 
+    let urlAPI = `https://dog.ceo/api/breed/${racaSelecionada}/images/random/3`;
 
     fetch (urlAPI)
         .then(function(resposta){
@@ -56,12 +56,9 @@ function exibirImagemSalva(){
 
 function excluir(i){
     let index = listItems.findIndex(dog => dog.id == i);
-    // console.log(index)
     listItems.splice(index, 1);
-    // console.log(listItems)
     localStorage.setItem('data', JSON.stringify(listItems));
     exibirImagemSalva();
-
 }
 
-exibirImagemSalva()
+exibirImagemSalva();
