@@ -1,10 +1,10 @@
 const racas = document.getElementById("racas");
 const listItems = JSON.parse(localStorage.getItem('data')) || [];
 
-function recebeFoto(){
+async function recebeFoto(){
 
     let racaSelecionada = racas.value; 
-    let urlAPI = `https://dog.ceo/api/breed/${racaSelecionada}/images/random/3`;
+    let urlAPI  = await `https://dog.ceo/api/breed/${racaSelecionada}/images/random/3`;
 
     fetch (urlAPI)
         .then(function(resposta){
@@ -47,8 +47,8 @@ function exibirImagemSalva(){
         let criaTag = `
                     <div class="item">
                         <img src="${imagemLocalStorage}" alt="" class="img_lista">
-                        <button onclick="excluir(${listItems[i].id})" >X</button>
-                    </div>` //parou aqui 
+                        <button onclick="excluir(${listItems[i].id})" class="bnt_excluir">X</button>
+                    </div>` 
         listarFotos.innerHTML += criaTag;
     }
 
